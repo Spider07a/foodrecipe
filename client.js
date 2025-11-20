@@ -244,13 +244,16 @@ function setupSignupValidation() { const sf = document.getElementById('signup-fo
 
 // login handling
 function setupLogin() { const lf = document.getElementById('login-form'); if (!lf) return; lf.addEventListener('submit', e => { e.preventDefault(); const email = document.getElementById('login-email').value.trim(); const pass = document.getElementById('login-password').value; const err = document.getElementById('login-error'); err.textContent = ''; 
-    if (email === 'admin@admin.com' && pass === 'admin123') { 
-        sessionStorage.removeItem('welcomeShown'); 
-        setCurrentUser({ name: 'Admin', email, role: 'admin' }); 
-        // CORRECTED PATH: Path from the root 'login.html' to 'admin/admin_dashboard.html'
-        window.location.href = 'admin/admin_dashboard.html'; 
-        return; 
-    } 
+   if (email === 'admin@admin.com' && pass === 'admin123') {
+        sessionStorage.removeItem('welcomeShown');
+        setCurrentUser({ name: 'Admin', email, role: 'admin' });
+        
+        // FIX: Using the absolute path starting from the repository root is more robust.
+        // It accounts for the project being hosted at https://<user>.github.io/foodrecipe/
+        window.location.href = '/foodrecipe/admin/admin_dashboard.html'; // <--- CHANGE THIS LINE
+        
+        return;
+    }
     if (email === 'user@user.com' && pass === 'user123') { 
         sessionStorage.removeItem('welcomeShown'); 
         setCurrentUser({ name: 'Anurag', email, role: 'user' }); 
@@ -280,3 +283,4 @@ document.addEventListener('DOMContentLoaded', () => {
     setupLogin();
     setInterval(() => { renderUserArea(); wireUpSaveButtons(); }, 1200);
 });
+

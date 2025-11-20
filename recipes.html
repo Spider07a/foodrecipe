@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Recipes | Foody Vibe</title>
+<link rel="stylesheet" href="../css/style.css"></head>
+<body>
+<header class="main-header">
+  <div class="logo">Foody Vibe</div>
+  <div class="header-right">
+    <nav class="client-nav"><a href="index.html">Home</a><a href="recipes.html">Recipes</a><a href="about.html">About</a></nav>
+    <div id="user-area"></div>
+  </div>
+</header>
+
+<main class="container">
+  <h1 class="page-title">All Recipes</h1>
+
+  <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px;">
+    <label>Filter:</label>
+    <select id="category-filter">
+      <option value="all">All</option>
+      <option value="Starter">Starter</option>
+      <option value="Main Course">Main Course</option>
+      <option value="Dessert">Dessert</option>
+    </select>
+    <a id="view-saved" class="btn secondary" style="margin-left:auto;">View Saved</a>
+  </div>
+
+  <div class="recipe-grid" id="recipes-list"></div>
+</main>
+
+<footer>&copy; 2025 Foody Vibe</footer>
+<script src="client.js"></script>
+</body>
+</html>

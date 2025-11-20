@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Recipes – Foody Vibe Admin</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="main-header" style="background:#22303c">
+    <div class="logo">🔧 Foody Vibe Admin</div>
+
+    <nav class="client-nav">
+        <a href="admin_dashboard.html">Dashboard</a>
+        <a href="../client/index.html">Client Home</a>
+    </nav>
+</header>
+
+
+<main class="container">
+
+    <h2 style="color:#c0392b; text-align:center; margin-bottom:20px;">
+        Manage Recipes
+    </h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="recipe-rows">
+
+            <tr>
+                <td>Panner Tikka</td>
+                <td>Starter</td>
+                <td>
+                    <img src="../images/recipe_photo/panner tikka.jpg"
+                         style="width:70px; height:70px; border-radius:8px; object-fit:cover;">
+                </td>
+                <td>
+                    <button class="btn edit">Edit</button>
+                    <button class="btn delete">Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Veg Biryani</td>
+                <td>Main Course</td>
+                <td>
+                    <img src="../images/recipe_photo/veg biryani.jpg"
+                         style="width:70px; height:70px; border-radius:8px; object-fit:cover;">
+                </td>
+                <td>
+                    <button class="btn edit">Edit</button>
+                    <button class="btn delete">Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gulab Jamun</td>
+                <td>Dessert</td>
+                <td>
+                    <img src="../images/recipe_photo/gulab jamun.jpg"
+                         style="width:70px; height:70px; border-radius:8px; object-fit:cover;">
+                </td>
+                <td>
+                    <button class="btn edit">Edit</button>
+                    <button class="btn delete">Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Masala Papad</td>
+                <td>Starter</td>
+                <td>
+                    <img src="../images/recipe_photo/masala papaad.jpg"
+                         style="width:70px; height:70px; border-radius:8px; object-fit:cover;">
+                </td>
+                <td>
+                    <button class="btn edit">Edit</button>
+                    <button class="btn delete">Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Aloo Gobi</td>
+                <td>Main Course</td>
+                <td>
+                    <img src="../images/recipe_photo/aloo gobi.jpg"
+                         style="width:70px; height:70px; border-radius:8px; object-fit:cover;">
+                </td>
+                <td>
+                    <button class="btn edit">Edit</button>
+                    <button class="btn delete">Delete</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</main>
+
+
+<footer>
+    © 2025 Foody Vibe Admin
+</footer>
+
+</body>
+</html>

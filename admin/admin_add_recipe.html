@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Add Recipe | Foody Vibe Admin</title>
+<link rel="stylesheet" href="../css/style.css"></head>
+<body>
+<header class="main-header admin-header" style="background: linear-gradient(90deg,#2c3e50,#34495e);">
+  <div style="display:flex;align-items:center;gap:16px;">
+    <div class="logo" style="color:#f1c40f;">🔑 Foody Vibe Admin</div>
+  </div>
+  <div class="header-right">
+    <div class="back-actions" style="margin-right:12px;">
+      <a href="admin_dashboard.html" class="back-btn">← Dashboard</a>
+      <a href="../client/index.html" class="back-btn" target="_blank">🏠 Client Home</a>
+    </div>
+    <nav class="client-nav"><a href="admin_dashboard.html">Overview</a><a href="admin_manage_recipe.html">Manage Recipes</a></nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1 class="page-title">Add New Recipe</h1>
+
+  <form id="add-recipe-form">
+    <div class="form-group"><label>Recipe ID (unique)</label><input id="r_id" required></div>
+    <div class="form-group"><label>Name</label><input id="rname" required></div>
+    <div class="form-group"><label>Category</label><select id="rcat"><option>Starter</option><option>Main Course</option><option>Dessert</option></select></div>
+    <div class="form-group"><label>Image URL</label><input id="rimg" placeholder="https://..."></div>
+    <div class="form-group"><label>Prep time</label><input id="rprep"></div>
+    <div class="form-group"><label>Cook time</label><input id="rcook"></div>
+    <div class="form-group"><label>Difficulty</label><input id="rdiff"></div>
+    <div class="form-group"><label>Ingredients (comma separated)</label><input id="ring"></div>
+    <div class="form-group"><label>Steps (comma separated)</label><input id="rsteps"></div>
+    <button class="btn" type="submit">Add Recipe</button>
+  </form>
+</main>
+
+<footer>&copy; 2025 Foody Vibe Admin</footer>
+<script src="admin.js"></script>
+</body>
+</html>

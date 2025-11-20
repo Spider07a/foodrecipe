@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody Vibe Admin</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="main-header" style="background:#22303c">
+        <div class="logo">🔑 Foody Vibe Admin</div>
+        <nav class="client-nav">
+            <a href="admin_dashboard.html">Overview</a>
+            <a href="admin_add_recipe.html">Add Recipe</a>
+            <a href="admin_manage_recipe.html">Manage Recipes</a>
+            <a href="../client/index.html">Client Home</a>
+        </nav>
+        <span style="background:#2ecc71; padding:8px 14px; border-radius:8px; color:white;">
+            Welcome, Admin!
+        </span>
+    </header>
+
+    <main class="container">
+
+        <h2 style="color:#c0392b; margin-bottom:14px;">Admin Dashboard</h2>
+
+        <div class="admin-dashboard-grid">
+            <div class="admin-card">
+                <h3>Total Recipes</h3>
+                <p id="stat-recipes">--</p>
+            </div>
+
+            <div class="admin-card">
+                <h3>Total Users</h3>
+                <p id="stat-users">--</p>
+            </div>
+
+            <div class="admin-card">
+                <h3>Custom Recipes</h3>
+                <p id="stat-custom">--</p>
+            </div>
+        </div>
+
+        <h2 style="margin-top:30px; color:#c0392b;">Recent Custom Recipes</h2>
+
+        <table class="clean-table">
+            <thead>
+                <tr>
+                    <th>Recipe Name</th>
+                    <th>Submitted By</th>
+                </tr>
+            </thead>
+            <tbody id="recent-custom"></tbody>
+        </table>
+
+
+    </main>
+
+    <footer>
+        © 2025 Foody Vibe Admin
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

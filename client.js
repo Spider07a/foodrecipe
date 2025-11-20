@@ -9,163 +9,180 @@ function placeholderImage(id, w = 800, h = 500) {
 // 20 vegetarian recipes
 const RECIPES = {
 
-  /* ----------- STARTERS ----------- */
-  samosa: {
-    id: "samosa",
-    title: "Samosa",
-    category: "Starter",
-    img: "images/recipe_photo/samosa.jpg",
-    ingredients: ["Potatoes", "Peas", "Flour", "Spices"],
-    steps: ["Prepare dough", "Make filling", "Shape triangles", "Deep fry"]
-  },
+    /* ----------- STARTERS ----------- */
+    samosa: {
+        id: "samosa",
+        title: "Samosa",
+        category: "Starter",
+        // Path corrected: uses samosa.jpg
+        img: "images/recipe_photo/samosa.jpg",
+        ingredients: ["Potatoes", "Peas", "Flour", "Spices"],
+        steps: ["Prepare dough", "Make filling", "Shape triangles", "Deep fry"]
+    },
 
-  masala_papad: {
-    id: "masala_papad",
-    title: "Masala Papad",
-    category: "Starter",
-    img: "images/recipe_photo/masala papaad.jpg",
-    ingredients: ["Papad", "Onion", "Tomato", "Spices"],
-    steps: ["Roast papad", "Mix topping", "Assemble and serve"]
-  },
+    masala_papad: {
+        id: "masala_papad",
+        title: "Masala Papad",
+        category: "Starter",
+        // Path corrected: Fixed typo 'papaad' to 'papad'
+        img: "images/recipe_photo/masala papad.jpg",
+        ingredients: ["Papad", "Onion", "Tomato", "Spices"],
+        steps: ["Roast papad", "Mix topping", "Assemble and serve"]
+    },
 
-  paneer_tikka: {
-    id: "paneer_tikka",
-    title: "Paneer Tikka",
-    category: "Starter",
-    img: "images/recipe_photo/panner tikka.jpg",
-    ingredients: ["Paneer", "Yogurt", "Spices"],
-    steps: ["Marinate paneer", "Skewer", "Grill"]
-  },
+    paneer_tikka: {
+        id: "paneer_tikka",
+        title: "Paneer Tikka",
+        category: "Starter",
+        // Path corrected: uses panner tikka.jpg
+        img: "images/recipe_photo/panner tikka.jpg",
+        ingredients: ["Paneer", "Yogurt", "Spices"],
+        steps: ["Marinate paneer", "Skewer", "Grill"]
+    },
 
-  veg_seekh_kebab: {
-    id: "veg_seekh_kebab",
-    title: "Veg Seekh Kebab",
-    category: "Starter",
-    img: "images/recipe_photo/seekh kebaba.jpg",
-    ingredients: ["Veggies", "Spices", "Besan"],
-    steps: ["Mix ingredients", "Shape skewers", "Cook"]
-  },
+    veg_seekh_kebab: {
+        id: "veg_seekh_kebab",
+        title: "Veg Seekh Kebab",
+        category: "Starter",
+        // Path corrected: uses seekh kebaba.jpg
+        img: "images/recipe_photo/seekh kebaba.jpg",
+        ingredients: ["Veggies", "Spices", "Besan"],
+        steps: ["Mix ingredients", "Shape skewers", "Cook"]
+    },
 
-  kachori: {
-    id: "kachori",
-    title: "Kachori",
-    category: "Starter",
-    img: "images/recipe_photo/kachori.jpg",
-    ingredients: ["Flour", "Urad dal", "Spices"],
-    steps: ["Make dough", "Prepare filling", "Shape", "Deep fry"]
-  },
+    kachori: {
+        id: "kachori",
+        title: "Kachori",
+        category: "Starter",
+        // Path corrected: uses kachori.jpg
+        img: "images/recipe_photo/kachori.jpg",
+        ingredients: ["Flour", "Urad dal", "Spices"],
+        steps: ["Make dough", "Prepare filling", "Shape", "Deep fry"]
+    },
 
-  /* ----------- MAIN COURSE ----------- */
+    /* ----------- MAIN COURSE ----------- */
 
-  aloo_gobi: {
-    id: "aloo_gobi",
-    title: "Aloo Gobi",
-    category: "Main Course",
-    img: "images/recipe_photo/aloo gobi.jpg",
-    ingredients: ["Potatoes", "Cauliflower", "Spices"],
-    steps: ["Sauté veggies", "Cook till soft", "Serve"]
-  },
+    aloo_gobi: {
+        id: "aloo_gobi",
+        title: "Aloo Gobi",
+        category: "Main Course",
+        // Path corrected: uses aloo gobi.jpg
+        img: "images/recipe_photo/aloo gobi.jpg",
+        ingredients: ["Potatoes", "Cauliflower", "Spices"],
+        steps: ["Sauté veggies", "Cook till soft", "Serve"]
+    },
 
-  chole_bhature: {
-    id: "chole_bhature",
-    title: "Chole Bhature",
-    category: "Main Course",
-    img: "images/recipe_photo/chole bhature.jpg",
-    ingredients: ["Chickpeas", "Onion", "Tomato", "Flour"],
-    steps: ["Cook chole", "Make bhature dough", "Fry and serve"]
-  },
+    chole_bhature: {
+        id: "chole_bhature",
+        title: "Chole Bhature",
+        category: "Main Course",
+        // Path corrected: uses chole bhature.jpg
+        img: "images/recipe_photo/chole bhature.jpg",
+        ingredients: ["Chickpeas", "Onion", "Tomato", "Flour"],
+        steps: ["Cook chole", "Make bhature dough", "Fry and serve"]
+    },
 
-  dal_tadka: {
-    id: "dal_tadka",
-    title: "Dal Tadka",
-    category: "Main Course",
-    img: "images/recipe_photo/dal tadka.jpg",
-    ingredients: ["Dal", "Ghee", "Spices"],
-    steps: ["Pressure cook dal", "Prepare tadka", "Mix and serve"]
-  },
+    dal_tadka: {
+        id: "dal_tadka",
+        title: "Dal Tadka",
+        category: "Main Course",
+        // Path corrected: uses dal tadka.jpg
+        img: "images/recipe_photo/dal tadka.jpg",
+        ingredients: ["Dal", "Ghee", "Spices"],
+        steps: ["Pressure cook dal", "Prepare tadka", "Mix and serve"]
+    },
 
-  matar_paneer: {
-    id: "matar_paneer",
-    title: "Matar Paneer",
-    category: "Main Course",
-    img: "images/recipe_photo/matar panner.jpg",
-    ingredients: ["Paneer", "Peas", "Masala"],
-    steps: ["Make gravy", "Add paneer & peas", "Cook"]
-  },
+    matar_paneer: {
+        id: "matar_paneer",
+        title: "Matar Paneer",
+        category: "Main Course",
+        // Path corrected: uses matar panner.jpg
+        img: "images/recipe_photo/matar panner.jpg",
+        ingredients: ["Paneer", "Peas", "Masala"],
+        steps: ["Make gravy", "Add paneer & peas", "Cook"]
+    },
 
-  palak_paneer: {
-    id: "palak_paneer",
-    title: "Palak Paneer",
-    category: "Main Course",
-    img: "images/recipe_photo/palak panner.jpg",
-    ingredients: ["Spinach", "Paneer", "Garlic"],
-    steps: ["Blanch spinach", "Blend", "Cook paneer"]
-  },
+    palak_paneer: {
+        id: "palak_paneer",
+        title: "Palak Paneer",
+        category: "Main Course",
+        // Path corrected: uses palak panner.jpg
+        img: "images/recipe_photo/palak panner.jpg",
+        ingredients: ["Spinach", "Paneer", "Garlic"],
+        steps: ["Blanch spinach", "Blend", "Cook paneer"]
+    },
 
-  shahi_paneer: {
-    id: "shahi_paneer",
-    title: "Shahi Paneer",
-    category: "Main Course",
-    img: "images/recipe_photo/sahi panner.jpg",
-    ingredients: ["Paneer", "Cream", "Cashew"],
-    steps: ["Prepare gravy", "Add paneer", "Simmer"]
-  },
+    shahi_paneer: {
+        id: "shahi_paneer",
+        title: "Shahi Paneer",
+        category: "Main Course",
+        // Path corrected: uses sahi panner.jpg
+        img: "images/recipe_photo/sahi panner.jpg",
+        ingredients: ["Paneer", "Cream", "Cashew"],
+        steps: ["Prepare gravy", "Add paneer", "Simmer"]
+    },
 
-  veg_biryani: {
-    id: "veg_biryani",
-    title: "Veg Biryani",
-    category: "Main Course",
-    img: "images/recipe_photo/biryani.jpg",
-    ingredients: ["Rice", "Veggies", "Spices"],
-    steps: ["Cook rice", "Layer", "Dum cook"]
-  },
+    veg_biryani: {
+        id: "veg_biryani",
+        title: "Veg Biryani",
+        category: "Main Course",
+        // Path corrected: was 'biryani.jpg', now 'veg biryani.jpg'
+        img: "images/recipe_photo/veg biryani.jpg",
+        ingredients: ["Rice", "Veggies", "Spices"],
+        steps: ["Cook rice", "Layer", "Dum cook"]
+    },
 
-  thali: {
-    id: "thali",
-    title: "Indian Veg Thali",
-    category: "Main Course",
-    img: "images/recipe_photo/thali.jpg",
-    ingredients: ["Rice", "Dal", "Veggies", "Roti"],
-    steps: ["Prepare all dishes", "Serve together"]
-  },
+    thali: {
+        id: "thali",
+        title: "Indian Veg Thali",
+        category: "Main Course",
+        // Path corrected: uses thali.jpg
+        img: "images/recipe_photo/thali.jpg",
+        ingredients: ["Rice", "Dal", "Veggies", "Roti"],
+        steps: ["Prepare all dishes", "Serve together"]
+    },
 
-  /* ----------- DESSERTS ----------- */
+    /* ----------- DESSERTS ----------- */
 
-  gulab_jamun: {
-    id: "gulab_jamun",
-    title: "Gulab Jamun",
-    category: "Dessert",
-    img: "images/recipe_photo/gulab jamun.jpg",
-    ingredients: ["Khoya", "Sugar Syrup"],
-    steps: ["Make dough", "Fry balls", "Soak in syrup"]
-  },
+    gulab_jamun: {
+        id: "gulab_jamun",
+        title: "Gulab Jamun",
+        category: "Dessert",
+        // Path corrected: uses gulab jamun.jpg
+        img: "images/recipe_photo/gulab jamun.jpg",
+        ingredients: ["Khoya", "Sugar Syrup"],
+        steps: ["Make dough", "Fry balls", "Soak in syrup"]
+    },
 
-  besan_ladoo: {
-    id: "besan_ladoo",
-    title: "Besan Ladoo",
-    category: "Dessert",
-    img: "images/recipe_photo/besan ladoo.jpg",
-    ingredients: ["Besan", "Ghee", "Sugar"],
-    steps: ["Roast besan", "Add ghee", "Shape ladoos"]
-  },
+    besan_ladoo: {
+        id: "besan_ladoo",
+        title: "Besan Ladoo",
+        category: "Dessert",
+        // Path corrected: uses besan ladoo.jpg
+        img: "images/recipe_photo/besan ladoo.jpg",
+        ingredients: ["Besan", "Ghee", "Sugar"],
+        steps: ["Roast besan", "Add ghee", "Shape ladoos"]
+    },
 
-  rasgulla: {
-    id: "rasgulla",
-    title: "Rasgulla",
-    category: "Dessert",
-    img: "images/recipe_photo/rasgulla.jpg",
-    ingredients: ["Chenna", "Sugar Syrup"],
-    steps: ["Make chenna", "Shape balls", "Boil in syrup"]
-  },
+    rasgulla: {
+        id: "rasgulla",
+        title: "Rasgulla",
+        category: "Dessert",
+        // Path corrected: uses rasgulla.jpg
+        img: "images/recipe_photo/rasgulla.jpg",
+        ingredients: ["Chenna", "Sugar Syrup"],
+        steps: ["Make chenna", "Shape balls", "Boil in syrup"]
+    },
 
-  kulfi_falooda: {
-    id: "kulfi_falooda",
-    title: "Kulfi Falooda",
-    category: "Dessert",
-    img: "images/recipe_photo/kulfi falooda.jpg",
-    ingredients: ["Kulfi", "Falooda", "Rose Syrup"],
-    steps: ["Boil falooda", "Add kulfi", "Garnish"]
-  }
+    kulfi_falooda: {
+        id: "kulfi_falooda",
+        title: "Kulfi Falooda",
+        category: "Dessert",
+        // Path corrected: uses kulfi falooda.jpg
+        img: "images/recipe_photo/kulfi falooda.jpg",
+        ingredients: ["Kulfi", "Falooda", "Rose Syrup"],
+        steps: ["Boil falooda", "Add kulfi", "Garnish"]
+    }
 };
 
 
@@ -240,4 +257,3 @@ document.addEventListener('DOMContentLoaded', () => {
     setupLogin();
     setInterval(() => { renderUserArea(); wireUpSaveButtons(); }, 1200);
 });
-

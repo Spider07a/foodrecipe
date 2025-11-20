@@ -14,7 +14,7 @@ const RECIPES = {
     id: "samosa",
     title: "Samosa",
     category: "Starter",
-    img: "../images/recipe_photo/samosa.jpg",
+    img: "images/recipe_photo/samosa.jpg",
     ingredients: ["Potatoes", "Peas", "Flour", "Spices"],
     steps: ["Prepare dough", "Make filling", "Shape triangles", "Deep fry"]
   },
@@ -23,7 +23,7 @@ const RECIPES = {
     id: "masala_papad",
     title: "Masala Papad",
     category: "Starter",
-    img: "../images/recipe_photo/masala papaad.jpg",
+    img: "images/recipe_photo/masala papaad.jpg",
     ingredients: ["Papad", "Onion", "Tomato", "Spices"],
     steps: ["Roast papad", "Mix topping", "Assemble and serve"]
   },
@@ -32,7 +32,7 @@ const RECIPES = {
     id: "paneer_tikka",
     title: "Paneer Tikka",
     category: "Starter",
-    img: "../images/recipe_photo/panner tikka.jpg",
+    img: "images/recipe_photo/panner tikka.jpg",
     ingredients: ["Paneer", "Yogurt", "Spices"],
     steps: ["Marinate paneer", "Skewer", "Grill"]
   },
@@ -41,7 +41,7 @@ const RECIPES = {
     id: "veg_seekh_kebab",
     title: "Veg Seekh Kebab",
     category: "Starter",
-    img: "../images/recipe_photo/seekh kebaba.jpg",
+    img: "images/recipe_photo/seekh kebaba.jpg",
     ingredients: ["Veggies", "Spices", "Besan"],
     steps: ["Mix ingredients", "Shape skewers", "Cook"]
   },
@@ -50,7 +50,7 @@ const RECIPES = {
     id: "kachori",
     title: "Kachori",
     category: "Starter",
-    img: "../images/recipe_photo/kachori.jpg",
+    img: "images/recipe_photo/kachori.jpg",
     ingredients: ["Flour", "Urad dal", "Spices"],
     steps: ["Make dough", "Prepare filling", "Shape", "Deep fry"]
   },
@@ -61,7 +61,7 @@ const RECIPES = {
     id: "aloo_gobi",
     title: "Aloo Gobi",
     category: "Main Course",
-    img: "../images/recipe_photo/aloo gobi.jpg",
+    img: "images/recipe_photo/aloo gobi.jpg",
     ingredients: ["Potatoes", "Cauliflower", "Spices"],
     steps: ["Sauté veggies", "Cook till soft", "Serve"]
   },
@@ -70,7 +70,7 @@ const RECIPES = {
     id: "chole_bhature",
     title: "Chole Bhature",
     category: "Main Course",
-    img: "../images/recipe_photo/chole bhature.jpg",
+    img: "images/recipe_photo/chole bhature.jpg",
     ingredients: ["Chickpeas", "Onion", "Tomato", "Flour"],
     steps: ["Cook chole", "Make bhature dough", "Fry and serve"]
   },
@@ -79,7 +79,7 @@ const RECIPES = {
     id: "dal_tadka",
     title: "Dal Tadka",
     category: "Main Course",
-    img: "../images/recipe_photo/dal tadka.jpg",
+    img: "images/recipe_photo/dal tadka.jpg",
     ingredients: ["Dal", "Ghee", "Spices"],
     steps: ["Pressure cook dal", "Prepare tadka", "Mix and serve"]
   },
@@ -88,7 +88,7 @@ const RECIPES = {
     id: "matar_paneer",
     title: "Matar Paneer",
     category: "Main Course",
-    img: "../images/recipe_photo/matar panner.jpg",
+    img: "images/recipe_photo/matar panner.jpg",
     ingredients: ["Paneer", "Peas", "Masala"],
     steps: ["Make gravy", "Add paneer & peas", "Cook"]
   },
@@ -97,7 +97,7 @@ const RECIPES = {
     id: "palak_paneer",
     title: "Palak Paneer",
     category: "Main Course",
-    img: "../images/recipe_photo/palak panner.jpg",
+    img: "images/recipe_photo/palak panner.jpg",
     ingredients: ["Spinach", "Paneer", "Garlic"],
     steps: ["Blanch spinach", "Blend", "Cook paneer"]
   },
@@ -106,7 +106,7 @@ const RECIPES = {
     id: "shahi_paneer",
     title: "Shahi Paneer",
     category: "Main Course",
-    img: "../images/recipe_photo/sahi panner.jpg",
+    img: "images/recipe_photo/sahi panner.jpg",
     ingredients: ["Paneer", "Cream", "Cashew"],
     steps: ["Prepare gravy", "Add paneer", "Simmer"]
   },
@@ -115,7 +115,7 @@ const RECIPES = {
     id: "veg_biryani",
     title: "Veg Biryani",
     category: "Main Course",
-    img: "../images/recipe_photo/biryani.jpg",
+    img: "images/recipe_photo/biryani.jpg",
     ingredients: ["Rice", "Veggies", "Spices"],
     steps: ["Cook rice", "Layer", "Dum cook"]
   },
@@ -124,7 +124,7 @@ const RECIPES = {
     id: "thali",
     title: "Indian Veg Thali",
     category: "Main Course",
-    img: "../images/recipe_photo/thali.jpg",
+    img: "images/recipe_photo/thali.jpg",
     ingredients: ["Rice", "Dal", "Veggies", "Roti"],
     steps: ["Prepare all dishes", "Serve together"]
   },
@@ -135,7 +135,7 @@ const RECIPES = {
     id: "gulab_jamun",
     title: "Gulab Jamun",
     category: "Dessert",
-    img: "../images/recipe_photo/gulab jamun.jpg",
+    img: "images/recipe_photo/gulab jamun.jpg",
     ingredients: ["Khoya", "Sugar Syrup"],
     steps: ["Make dough", "Fry balls", "Soak in syrup"]
   },
@@ -144,7 +144,7 @@ const RECIPES = {
     id: "besan_ladoo",
     title: "Besan Ladoo",
     category: "Dessert",
-    img: "../images/recipe_photo/besan ladoo.jpg",
+    img: "images/recipe_photo/besan ladoo.jpg",
     ingredients: ["Besan", "Ghee", "Sugar"],
     steps: ["Roast besan", "Add ghee", "Shape ladoos"]
   },
@@ -153,7 +153,7 @@ const RECIPES = {
     id: "rasgulla",
     title: "Rasgulla",
     category: "Dessert",
-    img: "../images/recipe_photo/rasgulla.jpg",
+    img: "images/recipe_photo/rasgulla.jpg",
     ingredients: ["Chenna", "Sugar Syrup"],
     steps: ["Make chenna", "Shape balls", "Boil in syrup"]
   },
@@ -162,7 +162,7 @@ const RECIPES = {
     id: "kulfi_falooda",
     title: "Kulfi Falooda",
     category: "Dessert",
-    img: "../images/recipe_photo/kulfi falooda.jpg",
+    img: "images/recipe_photo/kulfi falooda.jpg",
     ingredients: ["Kulfi", "Falooda", "Rose Syrup"],
     steps: ["Boil falooda", "Add kulfi", "Garnish"]
   }
@@ -240,3 +240,4 @@ document.addEventListener('DOMContentLoaded', () => {
     setupLogin();
     setInterval(() => { renderUserArea(); wireUpSaveButtons(); }, 1200);
 });
+

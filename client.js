@@ -25,7 +25,7 @@ const RECIPES = {
         title: "Masala Papad",
         category: "Starter",
         // Path corrected: Fixed typo 'papaad' to 'papad'
-        img: "images/recipe_photo/masala papad.jpg",
+        img: "images/recipe_photo/masala_papad.jpg",
         ingredients: ["Papad", "Onion", "Tomato", "Spices"],
         steps: ["Roast papad", "Mix topping", "Assemble and serve"]
     },
@@ -257,3 +257,4 @@ document.addEventListener('DOMContentLoaded', () => {
     setupLogin();
     setInterval(() => { renderUserArea(); wireUpSaveButtons(); }, 1200);
 });
+

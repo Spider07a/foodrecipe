@@ -24,7 +24,7 @@ const RECIPES = {
         id: "masala_papad",
         title: "Masala Papad",
         category: "Starter",
-        // Path corrected: Fixed typo 'papaad' to 'papad'
+        // Path confirmed based on screenshot: uses "masala papad.jpg" (with space)
         img: "images/recipe_photo/masala papad.jpg",
         ingredients: ["Papad", "Onion", "Tomato", "Spices"],
         steps: ["Roast papad", "Mix topping", "Assemble and serve"]
@@ -243,10 +243,11 @@ function setupContactValidation() { const cf = document.getElementById('contact-
 function setupSignupValidation() { const sf = document.getElementById('signup-form'); if (!sf) return; sf.addEventListener('submit', e => { e.preventDefault(); const name = document.getElementById('sname').value.trim(); const email = document.getElementById('semail').value.trim(); const pass = document.getElementById('spass').value; const passConfirm = document.getElementById('spass_confirm').value; const err = document.getElementById('signup-error'); err.textContent = ''; if (!name || !email || !pass || !passConfirm) { err.textContent = 'All fields required.'; return; } if (pass.length < 6) { err.textContent = 'Password must be at least 6 characters.'; return; } if (pass !== passConfirm) { err.textContent = 'Passwords do not match.'; return; } const users = JSON.parse(localStorage.getItem('mockUsers') || '[]'); if (users.find(u => u.email === email)) { err.textContent = 'Email already registered.'; return; } users.push({ name, email, pass }); localStorage.setItem('mockUsers', JSON.stringify(users)); localStorage.setItem(`saved_${email}`, JSON.stringify([])); alert('Registration successful (mock). Please login.'); sf.reset(); window.location.href = 'login.html'; }); }
 
 // login handling
-function setupLogin() { const lf = document.getElementById('login-form'); if (!lf) return; lf.addEventListener('submit', e => { e.preventDefault(); const email = document.getElementById('login-email').value.trim(); const pass = document.getElementById('login-password').value; const err = document.getElementById('login-error'); err.textContent = ''; if (email === 'admin@admin.com' && pass === 'admin123') { 
+function setupLogin() { const lf = document.getElementById('login-form'); if (!lf) return; lf.addEventListener('submit', e => { e.preventDefault(); const email = document.getElementById('login-email').value.trim(); const pass = document.getElementById('login-password').value; const err = document.getElementById('login-error'); err.textContent = ''; 
+    if (email === 'admin@admin.com' && pass === 'admin123') { 
         sessionStorage.removeItem('welcomeShown'); 
         setCurrentUser({ name: 'Admin', email, role: 'admin' }); 
-        // CORRECTED PATH: Changed '../admin/admin_dashboard.html' to 'admin/admin_dashboard.html'
+        // CORRECTED PATH: Path from the root 'login.html' to 'admin/admin_dashboard.html'
         window.location.href = 'admin/admin_dashboard.html'; 
         return; 
     } 
